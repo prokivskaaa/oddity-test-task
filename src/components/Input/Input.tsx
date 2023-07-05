@@ -5,6 +5,8 @@ import CameraIcon from '../../icons/CameraIcon';
 import { DetailedHTMLProps, TextareaHTMLAttributes } from 'react';
 import useDeviceMode, { DeviceMode } from '../../hooks/useDeviceMode';
 
+import KeyboardImage from './typing.png';
+
 type InputProps = DetailedHTMLProps<
   TextareaHTMLAttributes<HTMLTextAreaElement>,
   HTMLTextAreaElement
@@ -28,7 +30,7 @@ const Input: React.FC<InputProps> = ({ value, ...rest }) => {
       <div className={classes.icons_container}>
         {isDesktop && (
           <div className={classes.typing_container}>
-            <img alt="transliteration" src="./img/typing.png" />
+            <img alt="transliteration" src={KeyboardImage} />
           </div>
         )}
 
