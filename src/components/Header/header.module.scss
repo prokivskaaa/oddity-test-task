@@ -1,0 +1,48 @@
+$header-link-color: rgba(0,0,0,.87);
+$grey-icon-color: #5f6368;
+
+.container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 6px;
+}
+
+.list {
+  display: flex;
+  padding-right: 15px;
+}
+
+.item {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  line-height: 24px;
+  vertical-align: middle;
+  color: $header-link-color;
+  font-family: arial,sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 8px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.appsIcon {
+  fill: $grey-icon-color;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover {
+    background-color: rgba(60,64,67,.08);
+  }
+}

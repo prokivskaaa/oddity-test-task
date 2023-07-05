@@ -1,0 +1,33 @@
+@use '../../../styles/utils/_vars' as *;
+
+$bg-grey: #f8f9fa;
+$border-on-hover: #dadce0;
+$focus-border: #4285f4;
+
+.button {
+  font-family: arial, sans-serif;
+  font-weight: 500;
+  background-color: $bg-grey;
+  border: 1px solid transparent;
+  border-radius: $button-border-radius;
+  color: $accent-text-color;
+  font-size: $large-font-size;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent-text-color-hover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid $border-on-hover;
+  }
+
+  &:focus {
+    border: 1px solid $focus-border;
+    outline: none;
+  }
+}

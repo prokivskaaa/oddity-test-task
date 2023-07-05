@@ -1,0 +1,46 @@
+@use '../../styles/utils/mixins' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20vh 40px;
+
+  @include onMobile {
+    padding: 5vh 20px;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+
+  @include onMobile {
+    padding: 18px 0 0;
+  }
+}
+
+.buttons {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainIcon {
+  height: 92px;
+  width: 272px;
+
+  @include onMobile {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+.oddity {
+  fill: #000;
+}

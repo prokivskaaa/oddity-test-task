@@ -1,0 +1,92 @@
+@use '../../styles/utils/mixins' as *;
+
+$border-color: #dadce0;
+$text-color: #70757a;
+$bg-color: #f2f2f2;
+
+%text-specf {
+  font-size: 15px;
+  color: $text-color;
+}
+
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $bg-color;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.line {
+  padding: 0 30px;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  @include onMobile {
+    padding: 0 10px;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+@include onMobile {
+  .list {
+    margin: 0 auto;
+  }
+
+  .firstList {
+    margin: 15px auto;
+    flex-wrap: wrap;
+
+    & > li {
+      width: 48%;
+
+      &:nth-of-type(1n) {
+        text-align: right;
+      }
+
+      &:nth-of-type(2n) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.item {
+  list-style: none;
+}
+
+.country {
+  @extend %text-specf;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.link {
+  @extend %text-specf;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include onMobile {
+    font-size: 13px;
+    padding: 7px;
+  }
+}
