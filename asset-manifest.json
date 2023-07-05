@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/oddity-test-task/static/css/main.0f347380.css",
+    "main.js": "/oddity-test-task/static/js/main.1c32e3a8.js",
+    "static/media/GoogleSans-Regular.ttf": "/oddity-test-task/static/media/GoogleSans-Regular.6c1be5cadff6ad16ad5f.ttf",
+    "index.html": "/oddity-test-task/index.html",
+    "main.0f347380.css.map": "/oddity-test-task/static/css/main.0f347380.css.map",
+    "main.1c32e3a8.js.map": "/oddity-test-task/static/js/main.1c32e3a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f347380.css",
+    "static/js/main.1c32e3a8.js"
+  ]
+}
